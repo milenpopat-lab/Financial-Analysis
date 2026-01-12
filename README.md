@@ -1,265 +1,161 @@
-#  Financial Statement Analysis Dashboard
+# Financial Statement Analysis Dashboard
 
-A comprehensive Streamlit web application for analyzing company financial statements, calculating key ratios, identifying trends, and comparing peer performance.
+Comprehensive financial statement analyzer with ratio calculations, trend analysis, and peer comparison.
 
-##  Features
+## Features
 
-###  **Financial Statement Analysis**
-- **Income Statement**: Revenue trends, profit margins, operating performance
-- **Balance Sheet**: Assets, liabilities, equity analysis over time
-- **Cash Flow**: Operating, investing, and financing cash flows
+**Financial Statements**
+- Income statement analysis
+- Balance sheet evaluation
+- Cash flow statement review
+- Multi-year historical data
 
-###  **Ratio Analysis**
-- **Profitability Ratios**: Net Profit Margin, ROA, ROE, Operating Margin
-- **Liquidity Ratios**: Current Ratio, Quick Ratio, Cash Ratio
-- **Leverage Ratios**: Debt-to-Equity, Debt-to-Assets, Equity Multiplier
-- **Efficiency Ratios**: Asset Turnover
+**Ratio Analysis**
+- Profitability: Net Margin, ROE, ROA, Operating Margin
+- Liquidity: Current Ratio, Quick Ratio, Cash Ratio
+- Leverage: Debt-to-Equity, Debt-to-Assets, Equity Multiplier
+- Efficiency: Asset Turnover
 
-###  **Trend Analysis**
+**Trend Analysis**
 - Year-over-year growth rates
 - Multi-year performance trends
+- Revenue and profit margin evolution
 - Visual trend identification
 
-###  **Peer Comparison**
-- Compare multiple companies side-by-side
+**Peer Comparison**
+- Side-by-side company analysis
 - Industry benchmarking
-- Competitive position analysis
+- Competitive positioning
+- Multi-company ratio comparison
 
-##  Getting Started
+**Visualizations**
+- Interactive charts (Plotly)
+- Radar plots for ratio comparison
+- Waterfall diagrams for cash flow
+- Bar charts for financial metrics
 
-### Prerequisites
-- Python 3.8 or higher
-- pip package manager
+## Tech Stack
 
-### Installation
+- Python 3.8+
+- Streamlit - Web framework
+- yfinance - Financial data API
+- Plotly - Interactive charts
+- Pandas - Data analysis
+- NumPy - Calculations
 
-1. **Install required packages:**
+## Installation
+
 ```bash
-pip install -r requirements_fs.txt
-```
-
-### Running the Dashboard
-
-```bash
+pip install -r requirements.txt
 streamlit run financial_statement_dashboard.py
 ```
 
-The dashboard will open automatically in your browser at `http://localhost:8501`
+## Usage
 
-##  How to Use
+**Basic Analysis**
+1. Enter stock ticker (e.g., AAPL, MSFT, JPM)
+2. Select analysis period (1-5 years)
+3. Navigate through tabs for different views
 
-### Basic Analysis
-1. **Enter Stock Ticker**: Type any publicly traded company ticker (e.g., AAPL, MSFT, JPM)
-2. **Select Analysis Period**: Choose 1-5 years of historical data
-3. **Explore Tabs**: Navigate through different financial statement views
-
-### Peer Comparison
+**Peer Comparison**
 1. Enter main company ticker
-2. Add peer tickers in sidebar (comma-separated): `MSFT, GOOGL, META`
-3. View side-by-side comparison in the "Peer Comparison" tab
+2. Add peer tickers (comma-separated)
+3. View comparison in Peer Comparison tab
 
-### Example Companies to Analyze
+## Example Companies
 
-**Technology:**
-- Apple (AAPL)
-- Microsoft (MSFT)
-- Google (GOOGL)
-- Amazon (AMZN)
+**Technology:** AAPL, MSFT, GOOGL, AMZN
+**Finance:** JPM, BAC, WFC, GS
+**Retail:** WMT, TGT, COST, HD
+**Consumer:** PG, KO, PEP, NKE
 
-**Finance:**
-- JPMorgan Chase (JPM)
-- Bank of America (BAC)
-- Wells Fargo (WFC)
-- Goldman Sachs (GS)
-
-**Retail:**
-- Walmart (WMT)
-- Target (TGT)
-- Costco (COST)
-- Home Depot (HD)
-
-**Consumer Goods:**
-- Procter & Gamble (PG)
-- Coca-Cola (KO)
-- PepsiCo (PEP)
-- Nike (NKE)
-
-##  Understanding the Ratios
-
-### Profitability Ratios
-
-**Net Profit Margin**
-- Formula: Net Income / Revenue × 100
-- Interpretation: Higher is better (shows efficiency in generating profit)
-- Good: >10%, Excellent: >20%
-
-**Return on Assets (ROA)**
-- Formula: Net Income / Total Assets × 100
-- Interpretation: Efficiency in using assets to generate profit
-- Good: >5%, Excellent: >10%
-
-**Return on Equity (ROE)**
-- Formula: Net Income / Shareholder Equity × 100
-- Interpretation: Return generated for shareholders
-- Good: >10%, Excellent: >15-20%
-
-### Liquidity Ratios
+## Ratio Interpretations
 
 **Current Ratio**
-- Formula: Current Assets / Current Liabilities
-- Interpretation: Ability to pay short-term obligations
-- Good: >1.5, Adequate: >1.0
-
-**Quick Ratio**
-- Formula: (Current Assets - Inventory) / Current Liabilities
-- Interpretation: Immediate liquidity (excluding inventory)
-- Good: >1.0
-
-### Leverage Ratios
+- Good: >1.5
+- Adequate: >1.0
+- Concerning: <1.0
 
 **Debt to Equity**
-- Formula: Total Debt / Shareholder Equity
-- Interpretation: Financial leverage and risk
-- Conservative: <1.0, Moderate: 1.0-2.0, High: >2.0
+- Conservative: <1.0
+- Moderate: 1.0-2.0
+- High: >2.0
 
-**Debt to Assets**
-- Formula: Total Debt / Total Assets
-- Interpretation: Percentage of assets financed by debt
-- Good: <0.5 (50%)
+**ROE (Return on Equity)**
+- Good: >10%
+- Excellent: >15-20%
 
-##  Analysis Tips
+**Net Profit Margin**
+- Good: >10%
+- Excellent: >20%
 
-### For Growth Companies
-- Focus on revenue growth trends
-- Watch operating margin expansion
-- Monitor cash flow from operations
+## Key Features
 
-### For Value Companies
-- Look for strong ROE and ROA
-- Check debt levels (lower is better)
-- Analyze dividend sustainability
+**Automatic Calculations**
+- 13+ financial ratios
+- Growth rate computations
+- Multi-year averages
+- Trend extrapolations
 
-### For Cyclical Companies
-- Compare ratios across business cycles
-- Focus on liquidity during downturns
-- Monitor debt levels carefully
+**Color-Coded Indicators**
+- Green: Strong performance
+- Yellow: Adequate performance
+- Red: Potential concerns
 
-### Red Flags to Watch
-- Declining revenue over multiple years
-- Negative cash flow from operations
-- Current ratio < 1.0
--  Increasing debt-to-equity ratio
--  Declining profit margins
+**Interactive Elements**
+- Adjustable time periods
+- Dynamic peer selection
+- Expandable visualizations
+- Downloadable data views
 
-### Positive Signals
--  Consistent revenue growth
--  Improving profit margins
--  Strong and growing cash flows
--  Decreasing debt levels
--  ROE > 15%
+## File Structure
 
-##  Use Cases
-
-### Investment Analysis
-- Evaluate potential stock purchases
-- Compare investment alternatives
-- Identify undervalued companies
-
-### Academic Projects
-- Financial statement analysis assignments
-- Corporate finance case studies
-- Investment analysis presentations
-
-### Professional Development
-- Practice ratio calculations
-- Learn financial analysis
-- Build portfolio projects
-
-### Business Analysis
-- Competitive analysis
-- Industry benchmarking
-- Company valuation preparation
-
-##  Technical Stack
-
-- **Streamlit**: Interactive web framework
-- **yfinance**: Real-time financial data API
-- **Plotly**: Interactive data visualizations
-- **Pandas**: Data manipulation and analysis
-- **NumPy**: Numerical computations
-
-##  Data Source
-
-Financial data is sourced from **Yahoo Finance** via the yfinance API, providing:
-- Income statements (annual)
-- Balance sheets (annual)
-- Cash flow statements (annual)
-- Company information and metrics
-
-**Data Limitations:**
-- Annual data only (not quarterly)
-- Historical data may be limited for some companies
-- Data accuracy depends on Yahoo Finance
-- Some companies may have incomplete data
-
-##  Skills Demonstrated
-
-This project showcases:
--  Financial statement analysis
--  Ratio calculation and interpretation
--  Data visualization
--  Python programming (Pandas, NumPy)
--  Web application development (Streamlit)
--  API integration (yfinance)
--  Business analytics and insights
-
-##  Deployment
-
-### Deploy on Streamlit Cloud
-
-1. **Push to GitHub:**
-```bash
-git init
-git add .
-git commit -m "Financial statement analysis dashboard"
-git remote add origin YOUR_REPO_URL
-git push -u origin main
+```
+financial-statement-analysis/
+├── financial_statement_dashboard.py    # Main application
+├── requirements.txt                    # Dependencies
+└── README.md                          # Documentation
 ```
 
-2. **Deploy:**
-- Go to [share.streamlit.io](https://share.streamlit.io)
-- Connect your GitHub repository
-- Select `financial_statement_dashboard.py` as main file
-- Deploy!
+## Live Demo
 
-## 📊 Example Analysis Workflow
+https://financial-analysis-m11126.streamlit.app/
 
-1. **Start with Overview**
-   - Review company info (sector, industry, market cap)
-   - Get familiar with the business
+## Data Source
 
-2. **Analyze Income Statement**
-   - Check revenue trends (growing or declining?)
-   - Examine profit margins
-   - Look at operating income
+Yahoo Finance via yfinance library. Annual financial statements with automatic updates.
 
-3. **Review Balance Sheet**
-   - Assess asset composition
-   - Evaluate debt levels
-   - Check equity trends
+## Requirements
 
-4. **Examine Cash Flows**
-   - Operating cash flow positive?
-   - Capital expenditure trends
-   - Free cash flow generation
+```
+streamlit>=1.28.0
+yfinance>=0.2.28
+pandas>=2.0.0
+plotly>=5.17.0
+numpy>=1.24.0
+openpyxl>=3.1.0
+```
 
-5. **Calculate & Interpret Ratios**
-   - Compare to industry averages
-   - Look for trends over time
-   - Identify strengths and weaknesses
+## Deployment
 
-6. **Peer Comparison**
-   - How does the company stack up?
-   - Competitive advantages/disadvantages
-   - Industry position
+Deploy to Streamlit Cloud:
+1. Push code to GitHub
+2. Connect at share.streamlit.io
+3. Select financial_statement_dashboard.py
+4. Deploy
 
+## Data Limitations
+
+- Annual data only
+- Historical availability varies by company
+- Dependent on Yahoo Finance accuracy
+- Some companies may have incomplete data
+
+## Use Cases
+
+- Investment analysis
+- Company valuation
+- Competitive research
+- Academic projects
+- Portfolio screening
+- Financial education
