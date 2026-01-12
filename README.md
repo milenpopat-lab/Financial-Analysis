@@ -1,31 +1,31 @@
-# 💼 Financial Statement Analysis Dashboard
+#  Financial Statement Analysis Dashboard
 
 A comprehensive Streamlit web application for analyzing company financial statements, calculating key ratios, identifying trends, and comparing peer performance.
 
-## 🌟 Features
+##  Features
 
-### 📊 **Financial Statement Analysis**
+###  **Financial Statement Analysis**
 - **Income Statement**: Revenue trends, profit margins, operating performance
 - **Balance Sheet**: Assets, liabilities, equity analysis over time
 - **Cash Flow**: Operating, investing, and financing cash flows
 
-### 📈 **Ratio Analysis**
+###  **Ratio Analysis**
 - **Profitability Ratios**: Net Profit Margin, ROA, ROE, Operating Margin
 - **Liquidity Ratios**: Current Ratio, Quick Ratio, Cash Ratio
 - **Leverage Ratios**: Debt-to-Equity, Debt-to-Assets, Equity Multiplier
 - **Efficiency Ratios**: Asset Turnover
 
-### 📉 **Trend Analysis**
+###  **Trend Analysis**
 - Year-over-year growth rates
 - Multi-year performance trends
 - Visual trend identification
 
-### 🔄 **Peer Comparison**
+###  **Peer Comparison**
 - Compare multiple companies side-by-side
 - Industry benchmarking
 - Competitive position analysis
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -46,7 +46,7 @@ streamlit run financial_statement_dashboard.py
 
 The dashboard will open automatically in your browser at `http://localhost:8501`
 
-## 📖 How to Use
+##  How to Use
 
 ### Basic Analysis
 1. **Enter Stock Ticker**: Type any publicly traded company ticker (e.g., AAPL, MSFT, JPM)
@@ -84,7 +84,7 @@ The dashboard will open automatically in your browser at `http://localhost:8501`
 - PepsiCo (PEP)
 - Nike (NKE)
 
-## 📊 Understanding the Ratios
+##  Understanding the Ratios
 
 ### Profitability Ratios
 
@@ -127,7 +127,7 @@ The dashboard will open automatically in your browser at `http://localhost:8501`
 - Interpretation: Percentage of assets financed by debt
 - Good: <0.5 (50%)
 
-## 💡 Analysis Tips
+##  Analysis Tips
 
 ### For Growth Companies
 - Focus on revenue growth trends
@@ -145,20 +145,20 @@ The dashboard will open automatically in your browser at `http://localhost:8501`
 - Monitor debt levels carefully
 
 ### Red Flags to Watch
-- ⚠️ Declining revenue over multiple years
-- ⚠️ Negative cash flow from operations
-- ⚠️ Current ratio < 1.0
-- ⚠️ Increasing debt-to-equity ratio
-- ⚠️ Declining profit margins
+- Declining revenue over multiple years
+- Negative cash flow from operations
+- Current ratio < 1.0
+-  Increasing debt-to-equity ratio
+-  Declining profit margins
 
 ### Positive Signals
-- ✅ Consistent revenue growth
-- ✅ Improving profit margins
-- ✅ Strong and growing cash flows
-- ✅ Decreasing debt levels
-- ✅ ROE > 15%
+-  Consistent revenue growth
+-  Improving profit margins
+-  Strong and growing cash flows
+-  Decreasing debt levels
+-  ROE > 15%
 
-## 🎯 Use Cases
+##  Use Cases
 
 ### Investment Analysis
 - Evaluate potential stock purchases
@@ -180,7 +180,7 @@ The dashboard will open automatically in your browser at `http://localhost:8501`
 - Industry benchmarking
 - Company valuation preparation
 
-## 🛠️ Technical Stack
+##  Technical Stack
 
 - **Streamlit**: Interactive web framework
 - **yfinance**: Real-time financial data API
@@ -188,7 +188,7 @@ The dashboard will open automatically in your browser at `http://localhost:8501`
 - **Pandas**: Data manipulation and analysis
 - **NumPy**: Numerical computations
 
-## 📝 Data Source
+##  Data Source
 
 Financial data is sourced from **Yahoo Finance** via the yfinance API, providing:
 - Income statements (annual)
@@ -202,18 +202,18 @@ Financial data is sourced from **Yahoo Finance** via the yfinance API, providing
 - Data accuracy depends on Yahoo Finance
 - Some companies may have incomplete data
 
-## 🎓 Skills Demonstrated
+##  Skills Demonstrated
 
 This project showcases:
-- ✅ Financial statement analysis
-- ✅ Ratio calculation and interpretation
-- ✅ Data visualization
-- ✅ Python programming (Pandas, NumPy)
-- ✅ Web application development (Streamlit)
-- ✅ API integration (yfinance)
-- ✅ Business analytics and insights
+-  Financial statement analysis
+-  Ratio calculation and interpretation
+-  Data visualization
+-  Python programming (Pandas, NumPy)
+-  Web application development (Streamlit)
+-  API integration (yfinance)
+-  Business analytics and insights
 
-## 🚀 Deployment
+##  Deployment
 
 ### Deploy on Streamlit Cloud
 
@@ -263,23 +263,3 @@ git push -u origin main
    - Competitive advantages/disadvantages
    - Industry position
 
-## ⚠️ Disclaimer
-
-This dashboard is for **educational and analytical purposes only**. It is not financial advice. Always conduct thorough research and consult with financial professionals before making investment decisions.
-
-## 🤝 Contributing
-
-Suggestions for improvements:
-- Additional financial ratios
-- Quarterly data support
-- Export functionality (PDF/Excel)
-- More advanced visualizations
-- Industry-specific metrics
-
-## 📫 Contact
-
-Built as part of a business analytics portfolio project demonstrating financial analysis and data visualization skills.
-
----
-
-**💼 Perfect for:** Finance students, aspiring analysts, investment enthusiasts, and anyone learning financial statement analysis!
